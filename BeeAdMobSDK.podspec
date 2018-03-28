@@ -2,10 +2,10 @@
 Pod::Spec.new do |s|
 
   s.name         = "BeeAdMobSDK"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "广告sdk"
   s.description  = <<-DESC
-    0.0.1:基础功能
+    0.0.x:基础功能
                    DESC
 
   s.license = {"type"=>"MIT", "file"=>"LICENSE"}
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 
   s.dependency "MJExtension"
 
-  s.dependency 'BeeCommonSDK', '0.0.8'
+  s.dependency 'BeeCommonSDK', '1.0.2'
   s.dependency 'BeeAFNetSDK', '0.0.1'
 
   s.dependency 'BeeMobGDTSDK', '1.0.0'

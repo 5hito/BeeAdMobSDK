@@ -59,12 +59,6 @@
 @property (nonatomic, copy) UIColor * _Nullable backgroundColor;
 
 /**
- *  构造方法
- *  强制需要广点通 appkey 和 广告位id，否则程序会奔溃
- */
--(instancetype _Nullable )initWithAppkey:(NSString *_Nonnull)appkey placementId:(NSString *_Nonnull)placementId;
-
-/**
  *  广告发起请求并展示在Window中
  *  详解：[可选]发起拉取广告请求,并将获取的广告以全屏形式展示在传入的Window参数中
  *  @param window 展示全屏开屏的容器
