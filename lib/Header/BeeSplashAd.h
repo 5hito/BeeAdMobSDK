@@ -29,6 +29,11 @@
 - (void)splashAdClicked:(BeeSplashAd * _Nullable)splashAd;
 
 /**
+ *  开屏广告点击跳过
+ */
+- (void)splashAdSkip:(BeeSplashAd * _Nullable)splashAd;
+
+/**
  *  开屏广告关闭回调
  */
 - (void)splashAdClosed:(BeeSplashAd * _Nullable)splashAd;
@@ -46,6 +51,10 @@
 @end
 
 @interface BeeSplashAd : NSObject
+/**
+ *  可外部设置谷歌广告id
+ */
+- (instancetype _Nullable )initWithGGSplashId:(NSString* _Nullable)pid;
 
 /**
  *  委托对象
