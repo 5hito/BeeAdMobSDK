@@ -8,6 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSInteger, MobNativeADType) { //广告类型
+    MobNativeADAnyType = 0,               //任何类型
+    MobNativeADAppInstallType = 1,        //安装类型
+    MobNativeADAnyContentType = 2,        //内容类型
+};
+
+typedef NS_ENUM(NSInteger, MobNativeOptionsOrientation) {
+    MobNativeOrientationAny = 1,       ///< No orientation preference.
+    MobNativeOrientationPortrait = 2,  ///< Prefer portrait images.
+    MobNativeOrientationLandscape = 3  ///< Prefer landscape images.
+};
+
 @protocol BeeMobNativeAdDelegate;
 
 @interface BeeMobNativeAd : UIView
@@ -16,6 +28,9 @@
 @property(nonatomic, weak) UIViewController *controller;
 @property(nonatomic, weak) id<BeeMobNativeAdDelegate> delegate;
 @property(nonatomic, assign) CGSize adSize;
+@property(nonatomic, assign) MobNativeADType nativeAdType;
+@property(nonatomic, assign) MobNativeOptionsOrientation preferredImageOrientation;
+
 @property(nonatomic, assign, readonly) BOOL isAppInstallType;
 @property(nonatomic, weak, readonly) UIView *headlineView;
 @property(nonatomic, weak, readonly) UIView *bodyView;
@@ -43,6 +58,7 @@
 - (void)adNativeLoader:(BeeMobNativeAd *)nativeView didFailToReceiveAdWithError:(NSError *)error;
 - (void)adNativeLoaderSuccess:(BeeMobNativeAd *)nativeView;
 
+@optional
 //广告展示 点击相关
 - (void)nativeAdDidRecordImpression:(BeeMobNativeAd *)nativeView;
 - (void)nativeAdDidRecordClick:(BeeMobNativeAd *)nativeView;
