@@ -32,7 +32,7 @@ if [ -n "$podName" ]; then
     git push --tags
 
     echo "提交sdk"
-    pod trunk push $podName --allow-warnings --verbose
+    pod trunk push $podName --allow-warnings
 
     echo "更新本地库"
     pod repo update

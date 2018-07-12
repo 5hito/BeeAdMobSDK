@@ -28,5 +28,6 @@
 
 - (instancetype)initWithFrame:(CGRect)frame withGGPid:(NSString*)pid;
 - (void)loadAdRequest;
++ (CGFloat)adViewHeight;
 
 @end
