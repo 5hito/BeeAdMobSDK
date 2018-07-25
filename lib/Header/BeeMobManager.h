@@ -10,6 +10,8 @@
 
 @interface BeeMobManager : NSObject
 
-- (void)showAppAlert;
++ (void)showAppAlert;
+
++ (void)setDefaultInterstitialGGId:(NSString*)ggUnitId;
 
 @end
