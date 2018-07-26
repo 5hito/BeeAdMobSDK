@@ -13,5 +13,8 @@
 + (void)showAppAlert;
 
 + (void)setDefaultInterstitialGGId:(NSString*)ggUnitId;
++ (void)setStopShowInterstitialAd;
+
++ (void)setDefaultProductId:(NSString*)productID;
 
 @end
