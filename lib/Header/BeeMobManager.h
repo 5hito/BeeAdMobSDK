@@ -17,4 +17,6 @@
 
 + (void)setDefaultProductId:(NSString*)productID;
 
++ (void)setUserVip:(BOOL)isVip;
+
 @end
