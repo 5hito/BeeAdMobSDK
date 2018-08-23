@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BeeAdMobSDK"
-  s.version      = "0.3.3"
+  s.version      = "0.3.5"
   s.summary      = "广告sdk"
   s.description  = <<-DESC
     0.0.x:基础功能
@@ -28,8 +28,8 @@ Pod::Spec.new do |s|
   s.dependency 'BeeCommonSDK'
   s.dependency 'BeeAFNetSDK'
 
-  s.dependency 'BeeMobGDTSDK', '~> 1.0.0'
-  s.dependency 'Google-Mobile-Ads-SDK'
+  s.dependency 'BeeMobGDTSDK', '~> 1.0.1'
+  s.dependency 'Google-Mobile-Ads-SDK', '~> 7.31.0'
 
   s.dependency 'GoogleMobileAdsMediationInMobi'
   s.dependency 'GoogleMobileAdsMediationMoPub'
