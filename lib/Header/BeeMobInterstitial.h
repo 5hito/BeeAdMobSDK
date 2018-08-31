@@ -17,6 +17,7 @@
 @property(nonatomic, readonly, strong) NSString *adUnitID;
 @property(nonatomic, weak) id<BeeMobInterstitialDelegate> delegate;
 @property(nonatomic, readonly, assign) BOOL isReady;
+@property(nonatomic, readonly, assign) BOOL hasBeenUsed;
 
 - (void)loadAdRequest;
 - (void)presentFromRootViewController:(UIViewController *)rootViewController;
@@ -27,11 +28,13 @@
 
 @optional
 
-- (void)beeMobInterstitialDidReceiveAd:(BeeMobInterstitial *)ad;
-- (void)beeMobInterstitial:(BeeMobInterstitial *)ad didFailToReceiveAdWithError:(NSError *)error;
-- (void)beeMobInterstitialClickAd:(BeeMobInterstitial *)ad;
-- (void)beeMobInterstitialClose:(BeeMobInterstitial *)ad;
-- (void)beeMobInterstitialDidImpression:(BeeMobInterstitial *)ad;
+- (void)interstitialDidReceiveAd:(BeeMobInterstitial *)ad;
+- (void)interstitial:(BeeMobInterstitial *)ad didFailToReceiveAdWithError:(NSError *)error;
+- (void)interstitialWillPresentScreen:(BeeMobInterstitial *)ad;
+- (void)interstitialDidFailToPresentScreen:(BeeMobInterstitial *)ad;
+- (void)interstitialWillDismissScreen:(BeeMobInterstitial *)ad;
+- (void)interstitialDidDismissScreen:(BeeMobInterstitial *)ad;
+- (void)interstitialWillLeaveApplication:(BeeMobInterstitial *)ad;
 
 @end
 

@@ -13,13 +13,40 @@
 @protocol BeeSplashAdDelegate <NSObject>
 
 @optional
+/**
+ *  开屏广告成功展示
+ */
+-(void)splashAdSuccessPresentScreen:(BeeSplashAd * _Nullable)splashAd;
 
-- (void)beeMobSplashDidReceiveAd:(BeeSplashAd * _Nullable)splashAd;
-- (void)beeMobSplashAdImpression:(BeeSplashAd * _Nullable)splashAd;
-- (void)beeMobSplashAdLoadFail:(BeeSplashAd * _Nullable)splashAd;
-- (void)beeMobSplashAdClicked:(BeeSplashAd * _Nullable)splashAd;
-- (void)beeMobSplashAdSkip:(BeeSplashAd * _Nullable)splashAd;
-- (void)beeMobSplashAdClose:(BeeSplashAd * _Nullable)splashAd;
+/**
+ *  开屏广告展示失败
+ */
+-(void)splashAdFailToPresent:(BeeSplashAd * _Nullable)splashAd;
+
+/**
+ *  开屏广告点击回调
+ */
+- (void)splashAdClicked:(BeeSplashAd * _Nullable)splashAd;
+
+/**
+ *  开屏广告点击跳过
+ */
+- (void)splashAdSkip:(BeeSplashAd * _Nullable)splashAd;
+
+/**
+ *  开屏广告关闭回调
+ */
+- (void)splashAdClosed:(BeeSplashAd * _Nullable)splashAd;
+
+/**
+ *  开屏广告点击以后弹出全屏广告页
+ */
+- (void)splashAdDidPresentFullScreenModal:(BeeSplashAd * _Nullable)splashAd;
+
+/**
+ *  点击以后全屏广告页已经关闭
+ */
+- (void)splashAdDidDismissFullScreenModal:(BeeSplashAd * _Nullable)splashAd;
 
 @end
 
