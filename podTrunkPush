@@ -32,12 +32,12 @@ if [ -n "$podName" ]; then
     git push --tags
 
     echo "提交sdk"
-    pod trunk push $podName --allow-warnings
+    pod trunk push $podName --allow-warnings --verbose
 
     echo "更新本地库"
-    pod repo update
-    rm ~/Library/Caches/CocoaPods/search_index.json
-    pod search $sdkName
+    # pod repo update
+    # rm ~/Library/Caches/CocoaPods/search_index.json
+    # pod search $sdkName
 
 else
     echo "没有获取到podspec"

@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BeeAdMobSDK"
-  s.version      = "1.2.5"
+  s.version      = "1.2.6"
   s.summary      = "广告sdk"
   s.description  = <<-DESC
     0.0.x:基础功能
@@ -24,6 +24,7 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 
   s.dependency "MJExtension"
+  s.dependency "SSZipArchive"
 
   s.dependency 'BeeCommonSDK'
   s.dependency 'BeeAFNetSDK'
