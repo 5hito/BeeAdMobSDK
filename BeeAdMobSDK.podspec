@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.dependency 'BeeCommonSDK'
   s.dependency 'BeeAFNetSDK'
 
-  s.dependency 'BeeMobGDTSDK', '~> 1.0.1'
+  s.dependency 'BeeMobGDTSDK', '~> 1.0.2'
   s.dependency 'Google-Mobile-Ads-SDK', '~> 7.32.0'
 
   s.dependency 'GoogleMobileAdsMediationInMobi'
