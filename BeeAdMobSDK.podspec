@@ -2,11 +2,11 @@
 Pod::Spec.new do |s|
 
   s.name         = "BeeAdMobSDK"
-  s.version      = "1.3.0"
+  s.version      = "2.0.0"
   s.summary      = "广告sdk"
   s.description  = <<-DESC
-    0.0.x:基础功能
-    1.x.x:合作专用
+    1.0.0:基础功能
+    2.0.0:全新升级
                    DESC
 
   s.license = {"type"=>"MIT", "file"=>"LICENSE"}
@@ -23,21 +23,25 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 
-  s.dependency "MJExtension"
-  s.dependency "SSZipArchive"
-
   s.dependency 'BeeCommonSDK'
   s.dependency 'BeeAFNetSDK'
 
-  s.dependency 'BeeMobGDTSDK', '~> 1.0.2'
-  s.dependency 'Google-Mobile-Ads-SDK', '~> 7.32.0'
+  s.dependency "MJExtension"
+  s.dependency 'Masonry'
+  s.dependency 'iCarousel'
 
-  s.dependency 'GoogleMobileAdsMediationInMobi'
+  s.dependency 'BeeMobBUADSDK'
+  s.dependency 'BeeMobGDTSDK'
+  s.dependency 'Google-Mobile-Ads-SDK', '~> 7.41.0'
+  s.dependency 'FBAudienceNetwork', '~> 4.28.1'
+  s.dependency 'GoogleMobileAdsMediationFacebook'
+
   s.dependency 'GoogleMobileAdsMediationMoPub'
-  s.dependency 'Flurry-iOS-SDK/FlurrySDK'
-  s.dependency 'Flurry-iOS-SDK/FlurryAds'
-  s.dependency 'AdMobMediationAdapterFlurry'
-#s.dependency 'GoogleMobileAdsMediationFacebook'
-#s.dependency 'FBAudienceNetwork', '~> 4.28.1'
+  s.dependency 'GoogleMobileAdsMediationAdColony'
+  s.dependency 'GoogleMobileAdsMediationAppLovin'
+  s.dependency 'GoogleMobileAdsMediationVungle'
+  s.dependency 'GoogleMobileAdsMediationUnity'
+
+  #s.dependency 'MoPub-Applovin-Adapters'
 
 end

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>appName</key>
+		<string>offline music</string>
+		<key>appDescribe</key>
+		<string>Easily download music from clouds to your device and play offline.</string>
+		<key>appBundleId</key>
+		<string>BeeApp.OfflineCloudMusic.en</string>
+		<key>appId</key>
+		<string>1399352160</string>
+		<key>appImage</key>
+		<string>music</string>
+		<key>appIsPro</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>appName</key>
+		<string>Live Weather</string>
+		<key>appDescribe</key>
+		<string>Live weather provides accurate weather forecasts around the world.</string>
+		<key>appBundleId</key>
+		<string>Bee.liveWeather.app</string>
+		<key>appId</key>
+		<string>1406209692</string>
+		<key>appImage</key>
+		<string>liveWeather</string>
+		<key>appIsPro</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>appName</key>
+		<string>OCR scanne</string>
+		<key>appDescribe</key>
+		<string>The easiest and most easy to use photo capture artifact.</string>
+		<key>appBundleId</key>
+		<string>BeeApp.Scanner.OCR</string>
+		<key>appId</key>
+		<string>1435757309</string>
+		<key>appImage</key>
+		<string>ocr</string>
+		<key>appIsPro</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>appName</key>
+		<string>Live Weather Pro</string>
+		<key>appDescribe</key>
+		<string>free to view 15 days weather forecast.Pro version pure without ads.</string>
+		<key>appBundleId</key>
+		<string>Bee.liveWeatherPro.app</string>
+		<key>appId</key>
+		<string>1437256011</string>
+		<key>appImage</key>
+		<string>liveWeather</string>
+		<key>appIsPro</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>appName</key>
+		<string>Offline</string>
+		<key>appDescribe</key>
+		<string>Free download from web or cloud，Full-featured File Manager</string>
+		<key>appBundleId</key>
+		<string>BeeApp.OffLine.en</string>
+		<key>appId</key>
+		<string>1397673548</string>
+		<key>appImage</key>
+		<string>offline</string>
+		<key>appIsPro</key>
+		<false/>
+	</dict>
+</array>
+</plist>
