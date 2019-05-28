@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BeeMobAppRecommendEntity.h"
 
 @interface BeeMobManager : NSObject
 
@@ -18,6 +17,5 @@
 + (void)setStopShowInterstitialAd;
 
 + (void)showAppAlert;
-+ (void)showAppRecommend:(UIViewController*)superController success:(void (^)(BeeMobAppRecommendEntity *entity))block;
 
 @end
