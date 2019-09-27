@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
     2.2.0:添加穿山甲
     2.2.1:解决穿山甲奔溃
     2.2.3:采用穿山甲pod
-    2.2.5:采用广点通pod
+    2.2.5:采用广点通podß
     2.2.6:fix bugs
     2.2.7:fix ios13 bugs
                    DESC
