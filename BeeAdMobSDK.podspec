@@ -2,9 +2,9 @@
 Pod::Spec.new do |s|
 
   s.name         = "BeeAdMobSDK"
-  s.version      = "2.3.0"
+  s.version      = "2.3.1"
   s.summary      = "广告sdk"
-  s.description  = <<-DESCß
+  s.description  = <<-DESC
     1.0.0:基础功能
     2.0.0:全新升级
     2.1.0:修复穿山甲奔溃问题
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
     2.2.3:采用穿山甲pod
     2.2.5:采用广点通podß
     2.2.6:fix bugs
-    2.3.0:fix ios13 bugs
+    2.3.1:fix ios13 bugs
                    DESC
 
   s.license = {"type"=>"MIT", "file"=>"LICENSE"}
