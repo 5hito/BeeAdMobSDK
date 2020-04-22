@@ -16,7 +16,7 @@
 
 - (void)beeMobSplashDidReceiveAd:(BeeSplashAd * _Nullable)splashAd;
 - (void)beeMobSplashAdImpression:(BeeSplashAd * _Nullable)splashAd;
-- (void)beeMobSplashAdLoadFail:(BeeSplashAd * _Nullable)splashAd;
+- (void)beeMobSplashAdLoadFail:(BeeSplashAd * _Nullable)splashAd error:(NSError*_Nullable)error;
 - (void)beeMobSplashAdClicked:(BeeSplashAd * _Nullable)splashAd;
 - (void)beeMobSplashAdSkip:(BeeSplashAd * _Nullable)splashAd;
 - (void)beeMobSplashAdWillClose:(BeeSplashAd * _Nullable)splashAd;
