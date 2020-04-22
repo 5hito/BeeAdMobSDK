@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BeeAdMobSDK"
-  s.version      = "2.5.3"
+  s.version      = "2.5.5"
   s.summary      = "广告sdk"
   s.description  = <<-DESC
     1.0.0:基础功能
@@ -40,15 +40,15 @@ Pod::Spec.new do |s|
   s.dependency 'Masonry'
 
   s.dependency 'GDTMobSDK'
-  s.dependency 'Google-Mobile-Ads-SDK', '~> 7.41.0'
+  s.dependency 'Google-Mobile-Ads-SDK', '~> 7.55.0'
   s.dependency 'FBAudienceNetwork', '~> 4.28.1'
-  s.dependency 'GoogleMobileAdsMediationFacebook'
+  # s.dependency 'GoogleMobileAdsMediationFacebook'
 
-  s.dependency 'GoogleMobileAdsMediationMoPub'
-  s.dependency 'GoogleMobileAdsMediationAdColony'
-  s.dependency 'GoogleMobileAdsMediationAppLovin'
-  s.dependency 'GoogleMobileAdsMediationVungle'
-  s.dependency 'GoogleMobileAdsMediationUnity'
+  # s.dependency 'GoogleMobileAdsMediationMoPub'
+  # s.dependency 'GoogleMobileAdsMediationAdColony'
+  # s.dependency 'GoogleMobileAdsMediationAppLovin'
+  # s.dependency 'GoogleMobileAdsMediationVungle'
+  # s.dependency 'GoogleMobileAdsMediationUnity'
 
   #s.dependency 'MoPub-Applovin-Adapters'
 
