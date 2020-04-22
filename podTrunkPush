@@ -28,8 +28,8 @@ if [ -n "$podName" ]; then
     git push origin master
 
     echo "提交版本号"
-    git tag $version
-    git push --tags
+    # git tag $version
+    # git push --tags
 
     echo "提交sdk"
     pod trunk push $podName --allow-warnings --verbose
