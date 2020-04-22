@@ -22,9 +22,11 @@ if [ -n "$podName" ]; then
     echo "当前版本号: $version"
     echo "sdk名称:$sdkName"
 
-    echo "添加文件"
+    echo "添加文件1"
     git add *
+    echo "添加文件2"
     git commit -m "$version"
+    echo "添加文件3"
     git push origin master
 
     echo "提交版本号"
