@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name             = "BeeAdMobSDK"
-  s.version          = "3.0.1"
+  s.version          = "3.0.2"
   s.summary          = 'A short description of BeeAdMobSDK.'
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
@@ -30,7 +30,7 @@ s.source       = { :git => "https://github.com/5hito/BeeAdMobSDK.git", :tag => s
 
   valid_archs = ['armv7', 'armv7s', 'x86_64', 'arm64']
 
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit', 'WebKit', 'AdSupport', 'SafariServices', 'StoreKit', 'SystemConfiguration', 'MobileCoreServices', 'CoreServices', 'Accelerate'
   
   s.dependency 'AnyThinkiOS', '5.6.7'
   s.dependency 'AFNetworking', '~> 4.0'
