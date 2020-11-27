@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name             = "BeeAdMobSDK"
-  s.version          = "3.0.0"
+  s.version          = "3.0.1"
   s.summary          = 'A short description of BeeAdMobSDK.'
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
@@ -27,6 +27,8 @@ s.source       = { :git => "https://github.com/5hito/BeeAdMobSDK.git", :tag => s
   s.resource_bundles = {
      'QFMobAd' => ['ios/Assets/*']
   }
+
+  valid_archs = ['armv7', 'armv7s', 'x86_64', 'arm64']
 
   # s.frameworks = 'UIKit', 'MapKit'
   

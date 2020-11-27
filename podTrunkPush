@@ -39,7 +39,11 @@ if [ -n "$podName" ]; then
     git push origin master
 
     git tag "$version"
-    git push origin tag "$version"
+    git push --tags
+
+    echo "提交sdk"
+    pod trunk push $podName --allow-warnings --verbose
+
 else
     echo "没有获取到podspec"
 fi
