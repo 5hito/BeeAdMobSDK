@@ -36,6 +36,7 @@ if [ -n "$podName" ]; then
         git commit -m "$version"
     fi
 
+    echo "git push"
     git push origin master
 
     git tag "$version"
