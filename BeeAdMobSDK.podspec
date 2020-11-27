@@ -1,55 +1,38 @@
 
 Pod::Spec.new do |s|
 
-  s.name         = "BeeAdMobSDK"
-  s.version      = "2.6.0"
-  s.summary      = "广告sdk"
-  s.description  = <<-DESC
-    1.0.0:基础功能
-    2.0.0:全新升级
-    2.1.0:修复穿山甲奔溃问题
-    2.1.1:移除穿山甲
-    2.2.0:添加穿山甲
-    2.2.1:解决穿山甲奔溃
-    2.2.3:采用穿山甲pod
-    2.2.5:采用广点通podß
-    2.2.6:fix bugs
-    2.3.1:fix ios13 bugs
-    2.5.0:移除穿山甲
-    2.5.1:fix bugs
-                   DESC
+  s.name             = "BeeAdMobSDK"
+  s.version          = "3.0.0"
+  s.summary          = 'A short description of BeeAdMobSDK.'
+  s.description      = <<-DESC
+TODO: Add long description of the pod here.
+                       DESC
 
-  s.license = {"type"=>"MIT", "file"=>"LICENSE"}
-  s.author             = { "5hito" => "beemans@foxmail.com" }
-  s.homepage     = "https://github.com/5hito/BeeAdMobSDK"
-  s.source       = { :git => "https://github.com/5hito/BeeAdMobSDK.git", :tag => s.version.to_s }
+s.license = {"type"=>"MIT", "file"=>"LICENSE"}
+s.author             = { "5hito" => "beemans@foxmail.com" }
+s.homepage     = "https://github.com/5hito/BeeAdMobSDK"
+s.source       = { :git => "https://github.com/5hito/BeeAdMobSDK.git", :tag => s.version.to_s }
 
-  s.source_files  = "lib/Header/*.h"
-  s.resources = "lib/Resources/*.bundle"
+  # 配置宏定义 podfile 文件顶部定义 ENV["SMART_AS_ENABLE"] = "true"
+  if ENV['SMART_AS_ENABLE']
+    s.xcconfig = {
+      "GCC_PREPROCESSOR_DEFINITIONS" => 'SD_WEBP=1'
+    }
+  end
 
-  s.requires_arc = true
-  s.ios.deployment_target    = '8.0'
-  s.ios.vendored_libraries = 'lib/libBeeAdMobSDK.a'
+  s.ios.deployment_target = '10.0'
+  s.ios.vendored_libraries   = 'ios/libBeeAdMobSDK.a'
+  s.source_files = 'ios/Header/*.h'
+  # s.resources = "ios/Resources/*.bundle"
+  s.resource_bundles = {
+     'QFMobAd' => ['ios/Assets/*']
+  }
 
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-
-  s.dependency 'BeeCommonSDK'
-  s.dependency 'BeeAFNetSDK'
-
-  s.dependency "MJExtension"
-  s.dependency 'Masonry'
-
-  s.dependency 'GDTMobSDK'
-  s.dependency 'Google-Mobile-Ads-SDK', '~> 7.55.0'
-  s.dependency 'FBAudienceNetwork', '~> 4.28.1'
-  # s.dependency 'GoogleMobileAdsMediationFacebook'
-
-  # s.dependency 'GoogleMobileAdsMediationMoPub'
-  # s.dependency 'GoogleMobileAdsMediationAdColony'
-  # s.dependency 'GoogleMobileAdsMediationAppLovin'
-  # s.dependency 'GoogleMobileAdsMediationVungle'
-  # s.dependency 'GoogleMobileAdsMediationUnity'
-
-  #s.dependency 'MoPub-Applovin-Adapters'
+  # s.frameworks = 'UIKit', 'MapKit'
+  
+  s.dependency 'AnyThinkiOS', '5.6.7'
+  s.dependency 'AFNetworking', '~> 4.0'
+  s.dependency 'SDWebImage'
+  s.dependency 'SDWebImage/WebP'
 
 end
